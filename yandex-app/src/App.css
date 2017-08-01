@@ -1,0 +1,167 @@
+/*.start-disk-button {
+  position: absolute;
+  top: 30%;
+  left: 50%
+}*/
+
+.disk-list-right {
+  /*border-left: solid 2px #001C00;*/
+  /*border: solid 2px #001C00;*/
+  height: 100%;
+}
+
+.disk-list-app {
+  height: 100%;
+  width: 900px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  /*border: solid 2px #001C00;*/
+}
+.disk-list-left {
+  flex: 1;
+  overflow: hidden;
+}
+
+.disk-list-left h2 {
+  height: 30px;
+  text-align: center;
+}
+
+.disk-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  overflow: auto;
+}
+
+.contact-item {
+  border-top: solid 2px;
+  /*background:;*/
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+.app-folder {
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  background-position: -10px;
+  background-size: cover;
+}
+
+.app-file {
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  background-position: -10px;
+  background-size: cover;
+}
+
+.item-name {
+  margin-left: 10px;
+  min-width: 50px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-info header .app-folder {
+  margin: 10px 0;
+  height: 90px;
+  width: 90px;
+  background-position: -10px 0;
+  background-size: cover;
+}
+.item-info header .app-folder::before {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  padding: 55px;
+  box-sizing: border-box;
+  content: '\f095';
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.item-info header .app-folder:hover::before {
+  opacity: 1;
+}
+.item-info header h3 {
+  margin: 0;
+  text-align: center;
+}
+.item-info section {
+  flex: 1;
+  padding: 15px;
+  font-size: 14px;
+}
+.item-info section p > span:nth-child(1) {
+  text-decoration: underline;
+  display: block;
+}
+
+.app-folder {
+  height: 50px;
+  width: 50px;
+}
+
+.grid-icon {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  margin-top: 2em;
+}
+
+.grid-item {
+  height: 100px;
+  float: left;
+  margin: 5px;
+}
+
+.grid-item-name {
+  display: block;
+}
+
+.item-name {
+  word-wrap: break-word;
+}
+
+.grid-table {
+  display: inline-flex;;
+}
+
+#gridInfo {
+  position: fixed;
+  margin-left: 60%;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 4em;
+  vertical-align: middle;
+}
+
+#main-info {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+}
+
+.intro-img-container{
+  width: 100%;
+}
