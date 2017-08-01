@@ -4,10 +4,10 @@ import { getAllFiles } from './connection/DiskMethods';
 import Greetings from './Greetings';
 import Disk from './Disk';
 import {Route} from 'react-router';
+import InfoPage from './InfoPage';
 
 
 let authHeaders = getHeaders();
-
 
 var Explorer = React.createClass({
     getInitialState: function () {
@@ -61,6 +61,13 @@ var Explorer = React.createClass({
         });
     },
     render: function () {
+        if (!authHeaders || !authHeaders.headers || authHeaders.headers.Authorization  === "") {
+            return (<div>
+                    <Route exact path="/" component={Greetings}/>
+                    <Route exact path="/disk/" component={InfoPage}/>
+                </div>
+            );
+        }
         if (!this.state.isLoaded || this.state.data.length === 0) {
             this.createTree();
         }
